@@ -28,6 +28,14 @@ button{
 .head{
     background-color: #8BC34A;
 }
-img{
-    display: auto;
+.detail{
+    margin-left: 250px;
+}
+.ballon{
+    display: flex;
+    margin-left: 250px;
+}
+tr{
+    border-radius: 20px;
+    border
 }
