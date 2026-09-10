@@ -1,0 +1,33 @@
+body{
+    background-color: #FFFADA;
+    font-family: 'Lato', sans-serif;
+}
+.maincenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+button{
+    padding: 16px 32px;
+    width: 250px;
+    text-decoration: none;
+    border-radius: 50px;
+    background-color: #8BC34A ;
+    color: #824AC3;
+}
+.rightcenter{
+    margin-left: 19em;
+}
+#ul{
+    margin-left: 28.4em;
+}
+
+#a{
+    font-size: 40px; 
+}
+.head{
+    background-color: #8BC34A;
+}
+img{
+    display: auto;
+}
