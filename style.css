@@ -20,13 +20,10 @@ button{
 .rightcenter{
     margin-left: 19em;
 }
-#ul{
+/*#ul{
     margin-left: 28.4em;
-}
+}*/
 
-#a{
-    font-size: 40px; 
-}
 .detail{
     margin-left: 250px;
 }
@@ -41,11 +38,14 @@ a{
     color:#9C27B0;
 }
 .cadre{
+    align-items: center;
+    justify-content: center;
     border:solid;
     border-color: black;
     border-width: 5px;
     border-radius: 25px;
-    width: 42em;
+    margin-left: 29%;
+    width: 15em;
     background-color: azure;
 }
 .main{
@@ -55,4 +55,14 @@ a{
     background-repeat: no-repeat;
     background-attachment: fixed;
     
+}
+a {
+    display: inline-block;
+    padding: 16px 32px;
+    width: 180px;
+    text-align: center;
+    border-radius: 50px;
+    background-color: #FFF3DC;
+    color: #3B241C;
+    text-decoration: none;
 }
