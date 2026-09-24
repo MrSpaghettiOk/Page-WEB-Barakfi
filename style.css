@@ -1,14 +1,13 @@
 body{
-    background-color: white;
     font-family: 'Lato', sans-serif;
 }
 .maincenter{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #0099ff;
+    background-color: #ffd078;
 }
-button{
+.button{
     padding: 16px 32px;
     width: 250px;
     text-decoration:none;
@@ -18,12 +17,9 @@ button{
     color: #824AC3;
 }
 .rightcenter{
-    margin-left: 19em;
+    margin-left: 40%;
+    background-color: #ffd078;
 }
-/*#ul{
-    margin-left: 28.4em;
-}*/
-
 .detail{
     margin-left: 250px;
 }
@@ -32,31 +28,25 @@ button{
     margin-left: 250px;
     top: -200px;
 }
-a{
-    padding:16px 32px;
-    text-decoration: none;
-    color:#9C27B0;
-}
 .cadre{
     align-items: center;
     justify-content: center;
-    border:solid;
-    border-color: black;
-    border-width: 5px;
-    border-radius: 25px;
-    margin-left: 29%;
+    border-radius: 40%;
+    margin-left: 27.5%;
     width: 15em;
     background-color: azure;
+    padding: 20px;
+    box-shadow: 0 0 0 1em azure;
 }
 .main{
-    background-image: url("https://github.com/MrSpaghettiOk/Page-WEB-Barakfi/raw/main/Logo barakfi_3.jpg");
+    background-color: #6CABDD;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     
 }
-a {
+a{
     display: inline-block;
     padding: 16px 32px;
     width: 180px;
@@ -66,3 +56,9 @@ a {
     color: #3B241C;
     text-decoration: none;
 }
+.contacts{
+    align-items: center;
+}
+.valeurs{
+    margin-left: 19em;
+}/*
