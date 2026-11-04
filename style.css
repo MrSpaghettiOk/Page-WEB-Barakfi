@@ -1,13 +1,28 @@
 body{
+    background-color: #ffffff;
     font-family: 'Lato', sans-serif;
+    
 }
 .maincenter{
+    padding: 16px 20px;
     display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #ffd078;
+    align-items: left;
+    justify-content: left;
+    background-color: #2F4558;
+    color: #ffffff;
 }
-.button{
+
+.header{
+    padding: 10px 20px ;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    background-color: #0081f1;
+    color: #ffffff;
+
+}
+
+button{
     padding: 16px 32px;
     width: 250px;
     text-decoration:none;
@@ -17,9 +32,12 @@ body{
     color: #824AC3;
 }
 .rightcenter{
-    margin-left: 40%;
-    background-color: #ffd078;
+    margin-left: 19em;
 }
+/*#ul{
+    margin-left: 28.4em;
+}*/
+
 .detail{
     margin-left: 250px;
 }
@@ -28,37 +46,41 @@ body{
     margin-left: 250px;
     top: -200px;
 }
+a{
+    padding:16px 32px ;
+    text-decoration: none;
+    color:#9C27B0;
+}
 .cadre{
     align-items: center;
     justify-content: center;
-    border-radius: 40%;
-    margin-left: 27.5%;
+    border-radius: 27px;
+    margin-left: 29%;
     width: 15em;
-    background-color: azure;
-    padding: 20px;
-    box-shadow: 0 0 0 1em azure;
+    padding: 1rem;
+    background-color: rgb(214, 213, 213);
 }
 .main{
-    background-color: #6CABDD;
+    background-image: url("");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    
 }
-a{
+ a{
     display: inline-block;
     padding: 16px 32px;
-    width: 180px;
+    width: 400px ;
     text-align: center;
-    border-radius: 50px;
-    background-color: #FFF3DC;
-    color: #3B241C;
+    border-radius: 10px ;
+    background-color:#335F8A;
+    color: #ffffff;
     text-decoration: none;
 }
-.contacts{
-    align-items: center;
+
+table {
+  table-layout: fixed;
+  width: 90%;
+  margin: 10px auto;
+  border-collapse: collapse;
 }
-.valeurs{
-    margin-left: 19em;
-}/*
