@@ -1,86 +1,248 @@
-body{
+/* Styles communs */
+body {
     background-color: #ffffff;
     font-family: 'Lato', sans-serif;
-    
 }
-.maincenter{
-    padding: 16px 20px;
+
+/* En-tête de la page d'accueil */
+.bienvenue {
+    background-color: #0081f1;
+    color: white;
+    padding: 25px;
+    border-radius: 15px;
+}
+
+.bienvenue h2 {
+    color: #2F4558;
+}
+.presentation {
+    margin-top: 30px;
+    padding: 15px;
+    background-color: #eeeeee;
+    border-left: 6px solid #824AC3;
+}
+.valeurs p {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px;
+    background-color: white;
+    border-radius: 8px;
+}
+.maincenter {
     display: flex;
-    align-items: left;
-    justify-content: left;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 16px 20px;
     background-color: #2F4558;
     color: #ffffff;
 }
-
-.header{
-    padding: 10px 20px ;
+footer {
+    margin-top: 40px;
+    padding: 15px;
+    background-color: #2F4558;
+    color: white;
+    text-align: center;
+}
+.header {
     display: flex;
-    align-items: left;
-    justify-content: left;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 10px 20px;
     background-color: #0081f1;
     color: #ffffff;
-
 }
 
-button{
-    padding: 16px 32px;
-    width: 250px;
-    text-decoration:none;
-    text-align: center;
-    border-radius: 50px;
-    background-color: #ffffff ;
-    color: #824AC3;
-}
-.rightcenter{
+.rightcenter {
     margin-left: 19em;
 }
-/*#ul{
-    margin-left: 28.4em;
-}*/
 
-.detail{
-    margin-left: 250px;
-}
-.ballon{
-    display: flex;
-    margin-left: 250px;
-    top: -200px;
-}
-a{
-    padding:16px 32px ;
+/* Boutons et liens */
+a {
+    display: inline-block;
+    width: 400px;
+    padding: 16px 32px;
+    border-radius: 10px;
+    background-color: #335F8A;
+    color: #ffffff;
+    text-align: center;
     text-decoration: none;
-    color:#9C27B0;
 }
-.cadre{
-    align-items: center;
-    justify-content: center;
-    border-radius: 27px;
-    margin-left: 29%;
+
+button {
+    width: 250px;
+    padding: 16px 32px;
+    border: 0;
+    border-radius: 50px;
+    background-color: #ffffff;
+    color: #824AC3;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* Encadré des valeurs */
+.cadre {
     width: 15em;
+    margin-left: 29%;
     padding: 1rem;
+    border-radius: 27px;
     background-color: rgb(214, 213, 213);
 }
-.main{
-    background-image: url("");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
- a{
-    display: inline-block;
-    padding: 16px 32px;
-    width: 400px ;
-    text-align: center;
-    border-radius: 10px ;
-    background-color:#335F8A;
-    color: #ffffff;
-    text-decoration: none;
+
+.cadre p {
+    margin: 0 0 1rem;
 }
 
+.cadre p:last-child {
+    margin-bottom: 0;
+}
+
+/* Page Notre Sport */
+.detail {
+    margin-left: 250px;
+}
+
+.ballon {
+    display: flex;
+    margin-left: 250px;
+}
+
+.ballon img {
+    width: 450px;
+    height: 250px;
+    object-fit: contain;
+}
+
+/* Page Compétition */
+.competition .affiche {
+    width: 550px;
+    height: 750px;
+    object-fit: contain;
+}
+
+/* Tableau (si utilisé sur une page) */
 table {
-  table-layout: fixed;
-  width: 90%;
-  margin: 10px auto;
-  border-collapse: collapse;
+    width: 90%;
+    margin: 10px auto;
+    table-layout: fixed;
+    border-collapse: collapse;
+}
+
+/* Mise en page sur petits écrans */
+@media (max-width: 700px) {
+    .detail {
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .ballon {
+        margin-left: 0;
+    }
+
+    .ballon img,
+    .competition .affiche {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .rightcenter {
+        margin-left: 1rem;
+    }
+
+    .cadre {
+        max-width: calc(100% - 2rem);
+        margin-left: 1rem;
+    }
+
+    a {
+        box-sizing: border-box;
+        max-width: 100%;
+    }
+}
+.contact {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #eeeeee;
+    border: 3px solid #2F4558;
+    border-radius: 20px;
+}
+
+.contact h1 {
+    color: #2F4558;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 25px;
+}
+
+.contact label {
+    color: #2F4558;
+    font-weight: bold;
+    margin-top: 8px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 12px;
+    border: 2px solid #335F8A;
+    border-radius: 10px;
+    font-family: inherit;
+    font-size: 16px;
+}
+
+.contact textarea {
+    min-height: 130px;
+    resize: vertical;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+    outline: 2px solid #824AC3;
+}
+
+.contact button {
+    width: 100%;
+    margin-top: 15px;
+    background-color: #2F4558;
+    color: white;
+    font-weight: bold;
+    border: 2px solid #2F4558;
+}
+
+.contact button:hover {
+    background-color: #335F8A;
+}
+
+.contact a {
+    width: auto;
+    margin-top: 20px;
+}
+.competition {
+    display: flex;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+}
+
+.competition .affiche {
+    width: 550px;
+    height: 750px;
+    object-fit: contain;
+}
+
+.videos {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.videos video {
+    width: 400px;
+    border: 3px solid #2F4558;
+    border-radius: 10px;
 }
